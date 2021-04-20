@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heicConverter", "heicConverter\heicConverter.csproj", "{473CE7D6-1550-4325-A8AB-787693C9EE3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30F7CABF-2627-4B8C-A965-3C997C12CEA6}
+	EndGlobalSection
+EndGlobal
