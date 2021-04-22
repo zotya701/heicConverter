@@ -117,14 +117,14 @@ namespace heicConverter
     // https://docs.microsoft.com/en-us/windows/win32/wic/system
     public static string[] SystemProperties =
     {
-      "System.ApplicationName",
+      //"System.ApplicationName",
       "System.Author",
       "System.Comment",
       "System.Copyright",
       "System.DateAcquired",
       "System.Keywords",
       "System.Rating",
-      "System.SimpleRating",
+      //"System.SimpleRating",
       "System.Subject",
       "System.Title"
     };
@@ -273,14 +273,14 @@ namespace heicConverter
       "System.Photo.MaxApertureNumerator",
       "System.Photo.MeteringMode",
       //"System.Photo.MeteringModeText",
-      "System.Photo.Orientation",
+      //"System.Photo.Orientation",
       //"System.Photo.OrientationText",
-      "System.Photo.PeopleNames",
+      //"System.Photo.PeopleNames",
       //"System.Photo.PhotometricInterpretation",
       //"System.Photo.PhotometricInterpretationText",
       "System.Photo.ProgramMode",
       //"System.Photo.ProgramModeText",
-      "System.Photo.RelatedSoundFile",
+      //"System.Photo.RelatedSoundFile",
       "System.Photo.Saturation",
       //"System.Photo.SaturationText",
       "System.Photo.Sharpness",
