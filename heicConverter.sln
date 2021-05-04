@@ -3,18 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heicConverter", "heicConverter\heicConverter.csproj", "{473CE7D6-1550-4325-A8AB-787693C9EE3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heicConverter", "heicConverter\heicConverter.csproj", "{473CE7D6-1550-4325-A8AB-787693C9EE3A}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Setup", "Setup\Setup.wixproj", "{164A2C98-49FD-4051-8BCC-A48D0FE412EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Debug|x86.Build.0 = Debug|Any CPU
 		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Release|x86.ActiveCfg = Release|Any CPU
+		{473CE7D6-1550-4325-A8AB-787693C9EE3A}.Release|x86.Build.0 = Release|Any CPU
+		{164A2C98-49FD-4051-8BCC-A48D0FE412EC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{164A2C98-49FD-4051-8BCC-A48D0FE412EC}.Debug|Any CPU.Build.0 = Debug|x86
+		{164A2C98-49FD-4051-8BCC-A48D0FE412EC}.Debug|x86.ActiveCfg = Debug|x86
+		{164A2C98-49FD-4051-8BCC-A48D0FE412EC}.Debug|x86.Build.0 = Debug|x86
+		{164A2C98-49FD-4051-8BCC-A48D0FE412EC}.Release|Any CPU.ActiveCfg = Release|x86
+		{164A2C98-49FD-4051-8BCC-A48D0FE412EC}.Release|x86.ActiveCfg = Release|x86
+		{164A2C98-49FD-4051-8BCC-A48D0FE412EC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

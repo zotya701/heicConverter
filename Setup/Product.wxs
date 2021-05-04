@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?include Version.wxi?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*"
+           Name="heicConverter"
+           Language="1033"
+           Version="$(var.Version)"
+           Manufacturer="N/A"
+           UpgradeCode="441f4a35-7f7a-48b0-a459-81266b163d9e">
+    <Package InstallerVersion="200"
+             Compressed="yes"
+             InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+    <UIRef Id="WixUI_Mondo" />
+
+    <Feature Id="ProductFeature"
+             Title="heicConverter"
+             Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="HarvestedComponents" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR"
+               Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER"
+                   Name="heicConverter">
+        </Directory>
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents"
+                    Directory="INSTALLFOLDER">
+      <Component Id="heicConverterExe"
+                 Guid="*">
+        <File Id="$(var.heicConverter.TargetName).exe"
+              KeyPath="yes"
+              Source="$(var.heicConverter.TargetDir)" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
