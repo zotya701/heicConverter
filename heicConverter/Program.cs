@@ -52,6 +52,7 @@ namespace heicConverter
       return await wRootCommand.InvokeAsync(args);
     }
 
+    // https://github.com/ejohnson-dotnet/heic2jpg/blob/master/Program.cs
     public static async Task Convert(string input, Format format)
     {
       try
@@ -61,7 +62,7 @@ namespace heicConverter
         {
           var wDecoder = await BitmapDecoder.CreateAsync(wInputStream);
           var wBitmap = await wDecoder.GetSoftwareBitmapAsync();
-          var wOutputName = Path.GetFileName(Path.ChangeExtension(input, $".{format.ToString().ToLower()}"));
+          var wOutputName = Path.GetFileName(Path.ChangeExtension(input, $".{format}".ToLower()));
           var wParentFolder = await wInputFile.GetParentAsync();
           var wOutputFile = await wParentFolder.CreateFileAsync(wOutputName, CreationCollisionOption.ReplaceExisting);
           using (var wOutputStream = await wOutputFile.OpenAsync(FileAccessMode.ReadWrite))
