@@ -31,11 +31,11 @@ namespace heicConverter
 
     public static async Task<int> Main(string[] args)
     {
-      var wRootCommand = new RootCommand("Converts .heic file(s) to the desired format.");
+      var wRootCommand = new RootCommand("Converts .heic file to the desired format.");
 
       wRootCommand.AddOption(new Option(new string[] { "--input", "-i" })
       {
-        Description = "The path to the image file(s) that is(are) to be converted.",
+        Description = "The path to the image file that is to be converted.",
         Argument = new Argument<string>(),
         Required = true
       });
