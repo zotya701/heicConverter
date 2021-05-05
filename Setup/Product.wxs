@@ -43,6 +43,35 @@
               KeyPath="yes"
               Source="$(var.heicConverter.TargetDir)" />
       </Component>
+      <!-- https://stackoverflow.com/questions/2123762/add-menu-item-to-windows-context-menu-only-for-specific-filetype -->
+      <Component Id="ContextMenu">
+        <RegistryValue Root="HKLM"
+                       Key="SOFTWARE\Classes\SystemFileAssociations\.heic\Shell\convertto"
+                       Name="MUIVerb"
+                       Type="string"
+                       Value="Convert to" />
+        <RegistryValue Root="HKLM"
+                       Key="SOFTWARE\Classes\SystemFileAssociations\.heic\Shell\convertto"
+                       Name="subcommands"
+                       Type="string"
+                       Value="" />
+        <RegistryValue Root="HKLM"
+                       Key="SOFTWARE\Classes\SystemFileAssociations\.heic\Shell\convertto\Shell\jpg\command"
+                       Type="expandable"
+                       Value="&quot;[INSTALLFOLDER]$(var.heicConverter.TargetName).exe&quot; -f jpg -i &quot;%1&quot;" />
+        <RegistryValue Root="HKLM"
+                       Key="SOFTWARE\Classes\SystemFileAssociations\.heic\Shell\convertto\Shell\png\command"
+                       Type="expandable"
+                       Value="&quot;[INSTALLFOLDER]$(var.heicConverter.TargetName).exe&quot; -f png -i &quot;%1&quot;" />
+        <RegistryValue Root="HKLM"
+                       Key="SOFTWARE\Classes\SystemFileAssociations\.heic\Shell\convertto\Shell\bmp\command"
+                       Type="expandable"
+                       Value="&quot;[INSTALLFOLDER]$(var.heicConverter.TargetName).exe&quot; -f bmp -i &quot;%1&quot;" />
+        <RegistryValue Root="HKLM"
+                       Key="SOFTWARE\Classes\SystemFileAssociations\.heic\Shell\convertto\Shell\tiff\command"
+                       Type="expandable"
+                       Value="&quot;[INSTALLFOLDER]$(var.heicConverter.TargetName).exe&quot; -f tiff -i &quot;%1&quot;" />
+      </Component>
     </ComponentGroup>
   </Fragment>
 </Wix>
