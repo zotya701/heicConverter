@@ -17,6 +17,24 @@
             <Component Id="cmpA982BD0DD49049ADB27311B7B6099BCD" Guid="*">
                 <File Id="fil7C47E747444CA323569CFF9BB814078C" KeyPath="yes" Source="SourceDir\heicConverter.runtimeconfig.json" />
             </Component>
+            <Component Id="cmp03CDC9BB624AEBF639C01D284D14E323" Guid="*">
+                <File Id="filDC2C9ABF6530CA0D586E66A8A74C69C6" KeyPath="yes" Source="SourceDir\heicConverterCLI.deps.json" />
+            </Component>
+            <Component Id="cmpDE7CC43B3731C1838A586E2114EC044D" Guid="*">
+                <File Id="fil8E8D86B45215869A32F90529F15860F3" KeyPath="yes" Source="SourceDir\heicConverterCLI.dll" />
+            </Component>
+            <Component Id="cmp0EEACE8BD2FAD9926405B7CA8CD5B71E" Guid="*">
+                <File Id="fil9791272CD0810699727E1E39481F91B7" KeyPath="yes" Source="SourceDir\heicConverterCLI.exe" />
+            </Component>
+            <Component Id="cmp5C8AF72C169556A758A5CAA2CEA0FF25" Guid="*">
+                <File Id="filD1844E54D2272E2CA4C1422BF6650A6D" KeyPath="yes" Source="SourceDir\heicConverterCLI.pdb" />
+            </Component>
+            <Component Id="cmp7EFD03C28BACC4984297125CBAC24AEE" Guid="*">
+                <File Id="fil92B85AE901E166C2DE7A319D253F11CC" KeyPath="yes" Source="SourceDir\heicConverterCLI.runtimeconfig.dev.json" />
+            </Component>
+            <Component Id="cmpAA62FCED8E149A6DFAEDF4485D026D88" Guid="*">
+                <File Id="fil345EFBA6169C1826ADF2827B7B157557" KeyPath="yes" Source="SourceDir\heicConverterCLI.runtimeconfig.json" />
+            </Component>
             <Component Id="cmp5A07035FA52F4F9E1424BE35CC16915F" Guid="*">
                 <File Id="fil72C197D43EC7996E816CEB4279B7388C" KeyPath="yes" Source="SourceDir\Microsoft.Windows.SDK.NET.dll" />
             </Component>
@@ -150,6 +168,9 @@
                 <Component Id="cmp78EC9822D35FF31A06B2DAC2459ADE79" Guid="*">
                     <File Id="fil6403865346F094BF0BFA43413395CC0A" KeyPath="yes" Source="SourceDir\ref\heicConverter.dll" />
                 </Component>
+                <Component Id="cmp1300B996AC4B52F03E8A7AC78B18CC58" Guid="*">
+                    <File Id="fil134AE30B6FC36DD6A4967931CE4F8BFA" KeyPath="yes" Source="SourceDir\ref\heicConverterCLI.dll" />
+                </Component>
             </Directory>
         </DirectoryRef>
     </Fragment>
@@ -160,10 +181,17 @@
             <ComponentRef Id="cmpD9E4F51603B4E7538607910CF851FA4C" />
             <ComponentRef Id="cmpD6C0A8D8C804F081CA5FC5954B7DB8B9" />
             <ComponentRef Id="cmpA982BD0DD49049ADB27311B7B6099BCD" />
+            <ComponentRef Id="cmp03CDC9BB624AEBF639C01D284D14E323" />
+            <ComponentRef Id="cmpDE7CC43B3731C1838A586E2114EC044D" />
+            <ComponentRef Id="cmp0EEACE8BD2FAD9926405B7CA8CD5B71E" />
+            <ComponentRef Id="cmp5C8AF72C169556A758A5CAA2CEA0FF25" />
+            <ComponentRef Id="cmp7EFD03C28BACC4984297125CBAC24AEE" />
+            <ComponentRef Id="cmpAA62FCED8E149A6DFAEDF4485D026D88" />
             <ComponentRef Id="cmp5A07035FA52F4F9E1424BE35CC16915F" />
             <ComponentRef Id="cmp3B9C9B9385920A10BBA478F4EB3B7ACD" />
             <ComponentRef Id="cmp33C30AAD37872CE4355CA33B0DDA2127" />
             <ComponentRef Id="cmp78EC9822D35FF31A06B2DAC2459ADE79" />
+            <ComponentRef Id="cmp1300B996AC4B52F03E8A7AC78B18CC58" />
         </ComponentGroup>
     </Fragment>
 </Wix>
