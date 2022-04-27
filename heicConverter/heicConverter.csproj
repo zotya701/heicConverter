@@ -5,6 +5,7 @@
     <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
     <Authors>Zoltan Hadur</Authors>
     <Version>1.2.0</Version>
+    <RepositoryUrl>https://github.com/zotya701/heicConverter</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
